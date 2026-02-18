@@ -17,6 +17,13 @@
   background-color: var(--background);
 }
 
+.section{
+  background-image: url('../../public/assets/Back_result.webp');
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
 .main {
   display: flex;
   min-height: 100vh;
@@ -25,7 +32,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: var(--foreground);
   padding: 120px 60px;
 }
 

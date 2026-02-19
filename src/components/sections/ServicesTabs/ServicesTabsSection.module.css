@@ -1,5 +1,9 @@
 .section {
   padding: 120px 0;
+  background-image: url('../../../../public/assets/Back.png');
+  background-position: center center;
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 /* ================= VERSION SWITCH ================= */

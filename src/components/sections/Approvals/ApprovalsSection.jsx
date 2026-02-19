@@ -44,7 +44,7 @@ export default function ApprovalsSection() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2 className={styles.title}> الشهادات</h2>
+        <h2 className={styles.title}>الشهادات</h2>
 
         <div className={styles.wrapper}>
           {CERTIFICATES.map((cert, i) => {

@@ -189,6 +189,10 @@
   border: none;
 }
 
+.mobileContactBtn i{
+  margin-right: 10px;
+}
+
 /* Animation */
 
 @keyframes slideDown {

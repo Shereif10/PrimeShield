@@ -13,7 +13,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #161616CC; /* اللون المطلوب */
+  /* background: #161616CC; اللون المطلوب */
   z-index: 1;
 }
 

@@ -14,7 +14,7 @@ export default function Footer() {
           {/* ===== Right Column (Company) ===== */}
           <div className={styles.company}>
             <div className={styles.logoRow}>
-              <img src="/assets/footerLogo.png" alt="Prime Shield" />
+              <img src="/assets/footerLogo_result.webp" alt="Prime Shield" />
               <h3 className={styles.companyName}>برايم شيلد</h3>
             </div>
 

@@ -5,7 +5,7 @@ import styles from "./ClientsSection.module.css";
 const CLIENTS = [
   {
     name: ["شركـــة دار بيـــــات", "للتطـوير العقــــاري"],
-    logo: "/assets/client-7_result.webp",
+    logo: "/assets/part-8_result.webp",
   },
   {
     name: ["شــركــــة مــــاسة", "البنيان للمقـــاولات"],
@@ -17,7 +17,7 @@ const CLIENTS = [
   },
   {
     name: ["شركة خالــد بــن علي", "بـــــــن عثمان الماجد"],
-    logo: "/assets/layer_1 (2)_result.webp",
+    logo: "/assets/layer_1(2)_result.webp",
   },
   {
     name: ["شـــــركة الـــمفهـــوم", "الاحترافي للمقــــاولات"],

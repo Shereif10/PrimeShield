@@ -84,6 +84,15 @@ export default function Navbar() {
             >
               الشهادات
             </Link>
+
+            <Link
+              href="/contact"
+              className={`${styles.link} ${
+                pathname === "/contact" ? styles.active : ""
+              }`}
+            >
+              حساباتنا
+            </Link>
           </nav>
 
           {/* Contact Button (Desktop) */}
@@ -127,6 +136,10 @@ export default function Navbar() {
 
             <Link href="/certificates" onClick={() => setMenuOpen(false)}>
               الشهادات
+            </Link>
+            
+            <Link href="/contact" onClick={() => setMenuOpen(false)}>
+              حساباتنا
             </Link>
 
             <button

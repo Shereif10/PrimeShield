@@ -3,4 +3,5 @@
   background-position: center center;
   background-repeat: repeat-y;
   background-size: cover;
+  overflow-x: hidden;
 }

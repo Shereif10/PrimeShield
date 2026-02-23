@@ -4,36 +4,43 @@ import styles from "./ClientsSection.module.css";
 
 const CLIENTS = [
   {
-    name: ["شركـــة دار بيـــــات", "للتطـوير العقــــاري"],
-    logo: "/assets/part-8_result.webp",
+    name: ["شركة", "ID work global"],
+    logo: "/assets/c11.png",
   },
   {
-    name: ["شــركــــة مــــاسة", "البنيان للمقـــاولات"],
-    logo: "/assets/client-2_result.webp",
+    name: ["شركة روشن"],
+    logo: "/assets/c2.png",
   },
   {
-    name: ["شــــركـــــة نمـــــــاء", "للأعـمال للمقــاولات"],
-    logo: "/assets/client-5_result.webp",
+    name: ["شركة ارمادا", "العالمية"],
+    logo: "/assets/c8.png",
   },
   {
-    name: ["شركة خالــد بــن علي", "بـــــــن عثمان الماجد"],
-    logo: "/assets/layer_1(2)_result.webp",
+    name: ["شركة الراجحي للصناعة", "والتجارة الوقفية"],
+    logo: "/assets/c7.png",
   },
   {
-    name: ["شـــــركة الـــمفهـــوم", "الاحترافي للمقــــاولات"],
-    logo: "/assets/client-3_result.webp",
+    name: ["شركة تالاريا", "للتطوير العقاري"],
+    logo: "/assets/c6.png",
   },
   {
-    name: ["شركة أســاس مكـــــين", "للـــتطــــــوير العقــــاري"],
-    logo: "/assets/client-7_result.webp",
+    name: ["شركة دار بيات", "للتطوير العقاري"],
+    logo: "/assets/c5.png",
   },
   {
-    name: ["شــركـــة مشـيــد", "للتطـــوير العقاري"],
-    logo: "/assets/client-8_result.webp",
+    name: ["شركة وهلة", "للتطوير العقاري"],
+    logo: "/assets/c4.png",
   },
   {
-    name: ["مجمــــــوعة IHG", "العـــــــالميــــــــة"],
-    logo: "/assets/client-4_result.webp",
+    name: ["شركة المسكن المشيد"],
+    logo: "/assets/c2.png",
+  },
+  {
+    name: ["شركة مشهد الإعمار", "للمقاولات العامة"],
+  },
+  {
+    name: ["شركة خالد الماجد", "للتطوير العقاري"],
+    logo: "/assets/c1.png",
   },
 ];
 
@@ -47,12 +54,13 @@ export default function ClientsSection() {
           {[...CLIENTS, ...CLIENTS].map((client, i) => (
             <div key={i} className={styles.card}>
               <div className={styles.name}>
-                <span>{client.name[0]}</span>
-                <span>{client.name[1]}</span>
+                {client.name.map((line, index) => (
+                  <span key={index}>{line}</span>
+                ))}
               </div>
 
               <div className={styles.logoWrapper}>
-                <img src={client.logo} alt="client logo" />
+                {client.logo && <img src={client.logo} alt="client logo" />}
               </div>
             </div>
           ))}

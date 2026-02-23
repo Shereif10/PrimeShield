@@ -4,29 +4,17 @@ import styles from "./PartnershipSection.module.css";
 
 const PARTNERS = [
   { name: "أســـاس مكيــــن", logo: "/assets/part-7_result.webp" },
-  {
-    name: "جهــــــــــــــات حكــــــومية",
-    logo: "/assets/part-3_result.webp",
-  },
   { name: "كالمـــــا", logo: "/assets/part-6_result.webp" },
-  {
-    name: "هيئة الزكـــاة والضــــــــريبة",
-    logo: "/assets/part-1_result.webp",
-  },
+
   { name: "شركة دار بيات", logo: "/assets/part-8_result.webp" },
   { name: "شركة مشيد", logo: "/assets/part-2_result.webp" },
   { name: "مجموعة روشن", logo: "/assets/part-4_result.webp" },
-  { name: "وزارة الاستثمــــار", logo: "/assets/part-5_result.webp" },
-  { name: "شركة سيفين", logo: "/assets/part_6.png" },
-  {
-    name: (
-      <>
-        شركة بالانس بلس <br />
-        للتطوير والاستثمار العقاري
-      </>
-    ),
-    logo: "/assets/part_7.png",
-  },
+  { name: "أيزوماكس", logo: "/assets/part1.png" },
+  { name: "Bitumat", logo: "/assets/part6.png" },
+  { name: "DCP ", logo: "/assets/part2.png" },
+  { name: "Fosroc", logo: "/assets/part3.png" },
+  { name: "DWI Dermabit", logo: "/assets/part4.png" },
+  { name: "شـــركــة وهلـة", logo: "/assets/c4.png" },
 ];
 
 export default function PartnershipSection() {

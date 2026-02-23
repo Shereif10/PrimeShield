@@ -4,6 +4,37 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
+const SOCIALS = [
+  {
+    url: "https://www.facebook.com/profile.php?id=61585939864920#",
+    icon: "fa-brands fa-facebook-f",
+  },
+  {
+    url: "https://www.instagram.com/primeshield.00?igsh=MWpzZ3d4Z2traGhlbQ==",
+    icon: "fa-brands fa-instagram",
+  },
+  {
+    url: "https://www.tiktok.com/@primeshield.00?is_from_webapp=1&sender_device=pc",
+    icon: "fa-brands fa-tiktok",
+  },
+  {
+    url: "https://www.linkedin.com/in/prime-shield-3a6a3b3a2",
+    icon: "fa-brands fa-linkedin-in",
+  },
+  {
+    url: "https://x.com/PrimeShield00",
+    icon: "fa-brands fa-x-twitter",
+  },
+  {
+    url: "https://www.snapchat.com/add/primeshield.00",
+    icon: "fa-brands fa-snapchat",
+  },
+  {
+    url: "mailto:primeshield321@gmail.com",
+    icon: "fa-solid fa-envelope",
+  },
+];
+
 export default function Footer() {
   const pathname = usePathname();
 
@@ -21,6 +52,21 @@ export default function Footer() {
             <p className={styles.description}>
               شركة سعودية رائدة في حلول العزل الهندسي وحماية المنشآت
             </p>
+
+            {/* ===== Social Icons ===== */}
+            <div className={styles.socials}>
+              {SOCIALS.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialIcon}
+                >
+                  <i className={item.icon}></i>
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* ===== Middle Column (Contact) ===== */}
@@ -106,6 +152,14 @@ export default function Footer() {
                 }`}
               >
                 الشهادات
+              </Link>
+              <Link
+                href="/contact"
+                className={`${styles.link} ${
+                  pathname === "/contact" ? styles.activeLink : ""
+                }`}
+              >
+                حساباتنا
               </Link>
             </div>
           </div>

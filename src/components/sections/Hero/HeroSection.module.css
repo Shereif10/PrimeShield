@@ -1,7 +1,9 @@
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 600px; /* حماية للموبايلات القصيرة */
+
+  min-height: 100vh;
+  padding-top: 140px;   /* مساحة آمنة للنافبار */
+  padding-bottom: 60px;
 
   background-image: url("/assets/hero_result.webp");
   background-size: cover;
@@ -9,14 +11,14 @@
   background-repeat: no-repeat;
 
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end;   /* رجعناه زي ما كان */
 
   border-bottom: 3px solid var(--color-yellow);
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
 }
 
-/* dark overlay */
+/* Overlay */
 .overlay {
   position: absolute;
   inset: 0;
@@ -24,20 +26,20 @@
   z-index: 1;
 }
 
-/* content wrapper */
+/* Content */
 .content {
   position: relative;
   z-index: 2;
-
-  margin: auto;
-  padding: 0 64px 60px 64px;
+  margin: 0 auto;
+  padding: 0 64px;
+  width: 100%;
 }
 
-/* ================= TEXT ================= */
+/* TEXT */
 
 .title {
   font-weight: 700;
-  font-size: 56px;
+  font-size: clamp(28px, 4vw, 56px);
   line-height: 150%;
   color: var(--color-yellow);
   margin-bottom: 16px;
@@ -48,7 +50,7 @@
 }
 
 .description {
-  font-size: 24px;
+  font-size: clamp(14px, 1.8vw, 24px);
   font-weight: 500;
   line-height: 150%;
   color: var(--color-white);
@@ -60,16 +62,15 @@
   font-weight: 700;
 }
 
-/* ================= CTA ================= */
+/* CTA */
 
 .cta {
   display: flex;
-  gap: 32px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-/* ================= Scroll Down Icon ================= */
+/* Scroll icon */
 
 .scrollDown {
   display: flex;
@@ -97,86 +98,39 @@
 }
 
 @keyframes bounceDown {
-  0% {
-    transform: translateY(0);
-    opacity: 0.8;
-  }
-  50% {
-    transform: translateY(10px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 0.8;
-  }
+  0% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(10px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.8; }
 }
 
-/* ===========================
-   Large Tablet
-=========================== */
-
-@media (max-width: 1200px) {
-  .title {
-    font-size: 48px;
-  }
-
-  .description {
-    font-size: 22px;
-  }
-
-  .content {
-    padding: 0 48px 50px 48px;
-  }
-}
-
-/* ===========================
-   Tablet
-=========================== */
+/* Tablet */
 
 @media (max-width: 992px) {
   .hero {
-    height: auto;
-    padding: 120px 0 80px 0;
-    align-items: flex-end;
+    min-height: auto;
+    padding-top: 160px;   /* نزودها سنة عشان النافبار */
+    padding-bottom: 80px;
   }
 
   .content {
     padding: 0 40px;
-    text-align: right;
-  }
-
-  .title {
-    font-size: 40px;
-  }
-
-  .description {
-    font-size: 20px;
   }
 }
 
-/* ===========================
-   Mobile
-=========================== */
+/* Mobile */
 
 @media (max-width: 768px) {
+
   .hero {
+    padding-top: 140px;
+    padding-bottom: 80px;
+
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
 
   .content {
     padding: 0 24px;
-  }
-
-  .title {
-    font-size: 32px;
-    line-height: 140%;
-  }
-
-  .description {
-    font-size: 16px;
-    line-height: 160%;
-    margin-bottom: 32px;
   }
 
   .scrollDown {
@@ -186,19 +140,9 @@
   }
 }
 
-/* ===========================
-   Small Mobile
-=========================== */
+/* Small Mobile */
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 26px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-
   .content {
     padding: 0 16px;
   }

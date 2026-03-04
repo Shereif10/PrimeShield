@@ -21,7 +21,11 @@ export default function CompanyProfile() {
             تعرف على خبرات برايم شيلد ومشاريعنا من خلال الملف التعريفي للشركة
           </p>
 
-          <a className={styles.button} download href='./assets/companyProfile.pdf'>
+          <a
+            className={styles.button}
+            download
+            href="./assets/companyProfile_compressed.pdf"
+          >
             تحميل الملف
             <i className="fa-solid fa-download"></i>{" "}
           </a>

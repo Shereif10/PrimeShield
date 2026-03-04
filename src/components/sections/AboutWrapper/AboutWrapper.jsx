@@ -4,6 +4,7 @@ import ProjectsSection from '../Projects/ProjectsSection';
 import ClientsSection from '../Clients/ClientsSection';
 import AboutCardsSection from '../AboutCards/AboutCardsSection';
 import CTASection from '../CTA/CTASection';
+import CompanyProfile from '../CompanyProfile/CompanyProfile';
 
 export default function AboutWrapper() {
   return (
@@ -11,6 +12,7 @@ export default function AboutWrapper() {
       <ProjectsSection />
       <ClientsSection />
       <AboutCardsSection />
+      <CompanyProfile/>
       <CTASection />
     </section>
   );

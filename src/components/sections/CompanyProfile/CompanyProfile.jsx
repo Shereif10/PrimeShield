@@ -24,7 +24,7 @@ export default function CompanyProfile() {
           <a
             className={styles.button}
             download
-            href="./assets/companyProfile.pdf"
+            href="./assets/companyProfile_compressed.pdf"
           >
             تحميل الملف
             <i className="fa-solid fa-download"></i>{" "}
